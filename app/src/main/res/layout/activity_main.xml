@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delarosa.delarosa_mysharedpreferences.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="69dp"
+        android:text="Username: "
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="46dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_alignBaseline="@+id/textView3"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:onClick="saveInfo"
+        android:text="Save Info"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSave"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignEnd="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="displayInfo"
+        android:text="Display Info" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="TextView" />
+</RelativeLayout>
